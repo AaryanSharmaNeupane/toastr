@@ -1,6 +1,6 @@
 name: toastr
 description: A customizable toast notification package for Flutter apps with clean UI and support for multiple toast styles.
-version: 0.0.1
+version: 0.1.1
 homepage: https://github.com/AaryanSharmaNeupane/toastr
 repository: https://github.com/AaryanSharmaNeupane/toastr
 topics:

@@ -49,14 +49,14 @@ class MyHomePage extends StatelessWidget {
             // margin: const EdgeInsets.all(30),
 
             // Appearance & Styles
-            // toastStyle: ToastStyle.flat,
+            // toastStyle: ToastStyle.minimal,
             // type: ToastType.success,
             // primaryColor: const Color(0xFF0FE2E2), // overrides type color
             // borderStyle: BorderRadius.circular(12),
             // messageStyle: const TextStyle(
             //   fontWeight: FontWeight.bold,
             //   fontSize: 16,
-            //   color: Colors.white,
+            // color: Colors.white,
             // ),
 
             // Icon & Close Button
@@ -66,7 +66,7 @@ class MyHomePage extends StatelessWidget {
           );
         },
         tooltip: 'Show Toast',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.remove_red_eye_outlined),
       ),
     );
   }

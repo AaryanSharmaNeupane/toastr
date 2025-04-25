@@ -50,7 +50,7 @@ class Toastr {
   }
 
   static void show({
-    required Buil1dContext context,
+    required BuildContext context,
     required String message,
     Duration closeDuration = const Duration(seconds: 2),
     Alignment alignment = Alignment.center,
