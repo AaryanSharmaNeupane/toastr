@@ -13,11 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color.fromARGB(255, 4, 114, 101),
+          seedColor: const Color.fromARGB(255, 0, 106, 255),
         ),
         useMaterial3: true,
       ),
-      debugShowCheckedModeBanner: false,
       home: const MyHomePage(),
     );
   }
@@ -35,22 +34,23 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("Toastr Example"),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => Toastr.show(
           context: context,
-          message: "Hey Jude",
+          message: "Welcome To Toastr !",
           // type: ToastType.info,
           showIcon: true,
-          toastStyle: ToastStyle.filled,
-          alignment: Alignment.bottomLeft,
+          toastStyle: ToastStyle.flatFilled,
+          // alignment: Alignment.bottomLeft,
           showCloseButton: true,
-          // messageStyle: TextStyle(
-          //   fontWeight: FontWeight.bold,
-          //   fontSize: 30,
-          // ),
+          closeDuration: const Duration(seconds: 10),
+          messageStyle: TextStyle(
+            fontWeight: FontWeight.bold,
+            // fontSize: 30,
+            // color: Colors.white,
+          ),
           // borderStyle: BorderRadius.circular(30),
           // primaryColor: const Color.fromARGB(255, 15, 226, 226),
         ),
