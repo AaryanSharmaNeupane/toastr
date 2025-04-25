@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:toastr/Widgets/toastr_child.dart';
-import 'package:toastr/models/toastr_options.dart';
+import '/Widgets/toastr_child.dart';
+import '/models/toastr_options.dart';
 
 class ToastrFilled extends StatelessWidget {
   const ToastrFilled({super.key, required this.options});

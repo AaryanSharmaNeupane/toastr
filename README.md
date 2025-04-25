@@ -1,6 +1,6 @@
-# Toastr
+# Toastr Flutter
 
-**Toastr** is a lightweight, customizable toast notification package for Flutter applications.  
+**toastr_flutter** is a lightweight, customizable toast notification package for Flutter applications.  
 It offers multiple toast styles, optional icons — making your UI more interactive and user-friendly.
 
 ---
@@ -11,7 +11,7 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  toastr: ^0.1.1
+  toastr_flutter: ^0.0.1
 ```
 
 Then run:
@@ -27,7 +27,7 @@ flutter pub get
 Import the package:
 
 ```dart
-import 'package:toastr/toastr.dart';
+import 'package:toastr_flutter/toastr_flutter.dart';
 ```
 
 Show a basic toast:

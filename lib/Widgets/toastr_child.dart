@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:toastr/models/toastr_options.dart';
-import 'package:toastr/toastr.dart';
+import '../toastr.dart';
+import '/models/toastr_options.dart';
 
 Widget toastrChild(
     {required ToastrOptions options, Color? textColor, Color? crossColor}) {

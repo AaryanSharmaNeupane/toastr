@@ -1,12 +1,12 @@
 // @dart=3.0
 
 import 'package:flutter/material.dart';
-import 'package:toastr/Widgets/toastr_filled.dart';
-import 'package:toastr/Widgets/toastr_flat.dart';
-import 'package:toastr/Widgets/toastr_flat_filled.dart';
-import 'package:toastr/animated_toastr_wrapper.dart';
-import 'package:toastr/models/toastr_options.dart';
+import 'Widgets/toastr_filled.dart';
+import 'Widgets/toastr_flat.dart';
+import 'Widgets/toastr_flat_filled.dart';
+import 'models/toastr_options.dart';
 import 'Widgets/toastr_minimal.dart';
+import 'animated_toastr_wrapper.dart';
 
 enum ToastType { success, error, warning, info }
 

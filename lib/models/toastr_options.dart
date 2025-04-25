@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toastr/toastr.dart';
+import '/toastr.dart';
 
 class ToastrOptions {
   final String message;
