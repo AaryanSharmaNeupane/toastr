@@ -11,7 +11,7 @@ Add the dependency to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  toastr: ^0.0.1
+  toastr: ^0.1.1
 ```
 
 Then run:
