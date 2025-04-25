@@ -11,6 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Toastr Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color.fromARGB(255, 0, 106, 255),
@@ -22,39 +24,48 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Toastr Example"),
+        title: const Text("Toastr Example"),
+      ),
+      body: const Center(
+        child: Text("Tap the button to show a toast"),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () => Toastr.show(
-          context: context,
-          message: "Welcome To Toastr !",
-          type: ToastType.warning,
-          showIcon: true,
-          toastStyle: ToastStyle.minimal,
-          // alignment: Alignment.bottomLeft,
-          showCloseButton: true,
-          closeDuration: const Duration(seconds: 10),
-          messageStyle: TextStyle(
-            fontWeight: FontWeight.bold,
-            // fontSize: 30,
-            // color: Colors.white,
-          ),
-          // borderStyle: BorderRadius.circular(30),
-          // primaryColor: const Color.fromARGB(255, 15, 226, 226),
-        ),
-        tooltip: 'show',
+        onPressed: () {
+          Toastr.show(
+            // Required
+            context: context,
+            message: "Welcome To Toastr!",
+
+            // Timing & Positioning
+            // closeDuration: const Duration(seconds: 5),
+            // alignment: Alignment.bottomRight,
+            // margin: const EdgeInsets.all(30),
+
+            // Appearance & Styles
+            // toastStyle: ToastStyle.flat,
+            // type: ToastType.success,
+            // primaryColor: const Color(0xFF0FE2E2), // overrides type color
+            // borderStyle: BorderRadius.circular(12),
+            // messageStyle: const TextStyle(
+            //   fontWeight: FontWeight.bold,
+            //   fontSize: 16,
+            //   color: Colors.white,
+            // ),
+
+            // Icon & Close Button
+            // showIcon: true,
+            // icon: Icons.check_circle,
+            // showCloseButton: true,
+          );
+        },
+        tooltip: 'Show Toast',
         child: const Icon(Icons.add),
       ),
     );

@@ -48,9 +48,14 @@ Toastr.show(
 
 ## ✨ Features
 
-- ✅ Supports 4 layout styles: `flat`, `filled`, `minimal`, and `flatFilled`  
+- ✅ Supports 4 layout styles: `flat`, `filled`, `minimal`, and `flatFilled`
+
   ![Styles](https://github.com/AaryanSharmaNeupane/toastr/blob/main/assets/Styles.png?raw=true)
+
 - ✅ Multiple toast types: `success`, `error`, `warning`, `info`
+
+  ![types](https://github.com/AaryanSharmaNeupane/toastr/blob/main/assets/types.png?raw=true)
+
 - ✅ Fully customizable:
   - Text style (`messageStyle`)
   - Border radius (`borderStyle`)
@@ -99,8 +104,6 @@ Below are all the customizable parameters supported by `Toastr.show()`:
 
 Contributions are always welcome!  
 If you have ideas, bug reports, or feature requests, [open an issue](https://github.com/AaryanSharmaNeupane/toastr/issues).
-
-To contribute directly, please read the [`CONTRIBUTING.md`](https://github.com/AaryanSharmaNeupane/toastr/blob/main/CONTRIBUTING.md) file for contribution guidelines.
 
 ---
 

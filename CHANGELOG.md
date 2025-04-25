@@ -1,3 +1,6 @@
-## 0.0.1
+## [0.0.1] - 2024-04-25
 
-* TODO: Describe initial release.
+- Initial release
+- Toast types: success, error, warning, info
+- Toast styles: flat, filled, minimal, flatFilled
+- Icon, close button, custom styles
