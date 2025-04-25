@@ -40,9 +40,9 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: () => Toastr.show(
           context: context,
           message: "Welcome To Toastr !",
-          // type: ToastType.info,
+          type: ToastType.warning,
           showIcon: true,
-          toastStyle: ToastStyle.flatFilled,
+          toastStyle: ToastStyle.minimal,
           // alignment: Alignment.bottomLeft,
           showCloseButton: true,
           closeDuration: const Duration(seconds: 10),

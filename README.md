@@ -46,15 +46,20 @@ Toastr.show(
 
 ---
 
-## Features
+## ✨ Features
 
-- ✅ Four toast styles: `flat`, `filled`, `minimal`, `flatFilled`  
+- ✅ Supports 4 layout styles: `flat`, `filled`, `minimal`, and `flatFilled`  
   ![Styles](https://github.com/AaryanSharmaNeupane/toastr/blob/main/assets/Styles.png?raw=true)
-- ✅ Toast types: `success`, `error`, `warning`, `info`
-- ✅ Optional icons and close button
-- ✅ Fade-in animation for smooth UX
-- ✅ Flexible placement using `OverlayEntry` and `Alignment`
-- ✅ Full control over margin, color, and appearance
+- ✅ Multiple toast types: `success`, `error`, `warning`, `info`
+- ✅ Fully customizable:
+  - Text style (`messageStyle`)
+  - Border radius (`borderStyle`)
+  - Primary color override (`primaryColor`)
+  - Toast alignment (`topRight`, `bottomCenter`, etc.)
+  - Toast spacing/margin
+- ✅ Easy API: just call `Toastr.show()` from anywhere with `BuildContext`
+- ✅ Lightweight and dependency-free (pure Flutter)
+- ✅ Suitable for alerts, confirmations, status messages, and in-app feedback
 
 ---
 
@@ -103,14 +108,3 @@ To contribute directly, please read the [`CONTRIBUTING.md`](https://github.com/A
 
 This project is licensed under the [MIT License](LICENSE).  
 You’re free to use, modify, and distribute it — just include credit where due.
-
----
-
-## Author
-
-**Aaryan Sharma**  
-[GitHub](https://github.com/AaryanSharmaNeupane)
-
----
-
-> Made with ❤️
