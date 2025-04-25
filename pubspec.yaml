@@ -5,7 +5,7 @@ homepage: https://github.com/AaryanSharmaNeupane/toastr
 repository: https://github.com/AaryanSharmaNeupane/toastr
 topics:
   - toast
-  - toastrx_flutter
+  - toastrx flutter
   - message
   - notification
 license: MIT
