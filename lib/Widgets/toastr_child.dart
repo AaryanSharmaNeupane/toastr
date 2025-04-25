@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../toastr.dart';
+import '../toastrx_flutter.dart';
 import '/models/toastr_options.dart';
 
 Widget toastrChild(
