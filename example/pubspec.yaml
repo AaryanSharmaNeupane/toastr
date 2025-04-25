@@ -1,5 +1,5 @@
 name: example
-description: "A demo project showing usage of the Toastr package."
+description: "A demo project showing usage of the Toastr Flutter package."
 publish_to: "none"
 version: 1.0.0+1
 
@@ -11,7 +11,7 @@ dependencies:
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
-  toastr:
+  toastr_flutter:
     path: ../
   flutter_test:
     sdk: flutter
