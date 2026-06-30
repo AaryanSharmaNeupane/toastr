@@ -20,6 +20,7 @@ class _AnimatedToastrWrapperState extends State<AnimatedToastrWrapper> {
 
   double opacity = 0.0;
   bool _isClosing = false;
+  bool _didClose = false;
 
   @override
   void initState() {
@@ -49,12 +50,19 @@ class _AnimatedToastrWrapperState extends State<AnimatedToastrWrapper> {
     });
   }
 
+  void _closeOnce() {
+    if (_didClose) return;
+
+    _didClose = true;
+    widget.onClose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return AnimatedOpacity(
       opacity: opacity,
       duration: _animationDuration,
-      onEnd: _isClosing ? widget.onClose : null,
+      onEnd: _isClosing ? _closeOnce : null,
       child: widget.child,
     );
   }
