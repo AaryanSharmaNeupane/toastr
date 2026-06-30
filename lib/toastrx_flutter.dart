@@ -103,11 +103,5 @@ class Toastr {
       ),
     );
     overlay.insert(overlayEntry);
-
-    Future.delayed(
-      closeDuration,
-    ).then((_) {
-      close();
-    });
   }
 }

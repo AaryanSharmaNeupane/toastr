@@ -16,11 +16,16 @@ class AnimatedToastrWrapper extends StatefulWidget {
 }
 
 class _AnimatedToastrWrapperState extends State<AnimatedToastrWrapper> {
+  static const Duration _animationDuration = Duration(milliseconds: 300);
+
   double opacity = 0.0;
+  bool _isClosing = false;
+
   @override
   void initState() {
     super.initState();
     _fadeIn();
+    _fadeOutAfterDuration();
   }
 
   void _fadeIn() {
@@ -33,13 +38,23 @@ class _AnimatedToastrWrapperState extends State<AnimatedToastrWrapper> {
     });
   }
 
+  void _fadeOutAfterDuration() {
+    Future.delayed(widget.closeDuration, () {
+      if (mounted) {
+        setState(() {
+          _isClosing = true;
+          opacity = 0.0;
+        });
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return AnimatedOpacity(
       opacity: opacity,
-      duration: Duration(
-        milliseconds: 300,
-      ),
+      duration: _animationDuration,
+      onEnd: _isClosing ? widget.onClose : null,
       child: widget.child,
     );
   }
